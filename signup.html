@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Login Page</title>
+   <style>
+       
+#logo{
+width: 30%;
+ margin: auto; 
+}
+#logo>img{
+   width: 25%;
+   margin-left: 50px;
+}
+#form{
+   /* border: 1px solid red; */
+   width: 35%;
+   margin: auto;
+   font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+   margin-top: 15px;
+}
+h3{
+  color:  rgb(20, 29, 56);
+  font-size: 15px;
+}
+#email,#password,#name,#name2{
+   width: 90%;
+   margin-bottom: 10px;
+   border: 1px solid #727483;
+   border-radius: 5px;
+   /* margin-left: 5px; */
+   font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+   padding: 3px;
+}
+.ptag{
+   /* border: 1px solid blue; */
+   font-size: 10px;
+}
+button{
+   /* border: 1px solid red; */
+   width: 60%;
+   margin-left: 50px;
+   padding: 5px;
+   border-radius: 5px;
+   margin-bottom: 15px;
+   background-color: #3662d8;
+   color: aliceblue;
+   border: none;
+   margin-top: 10px;
+}
+#bottom{
+   text-align: center;
+   font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+   font-size: 10px;
+    
+}
+#already{
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 8px;
+    /* border: 1px solid red; */
+    
+}
+#already>a{
+    /* border: 1px solid red; */
+    text-decoration: none;
+}
+
+
+
+
+
+   </style>
+</head>
+<body>
+   <div id="logo">
+       <img src="https://www.expedia.co.in/_dms/interstitial/logo.svg?locale=en_GB&siteid=27">
+   </div>
+    
+       <form id="form">
+       <h3>Create an account</h3>
+       <input id="email" type="email" placeholder="Email address">
+       <input id="name" type="name" placeholder="First name">
+       <input id="name2" type="name2" placeholder="Surname">
+       <input id="password" type="password" placeholder="password">
+       <p class="ptag" >Keep me signed In </p>
+
+       <p class="ptag">Selecting this checkbox will keep you signed into your account on this device until you sign out. Do not select this on shared devices.</p>
+
+        <p  class="ptag">I'd like to receive travel deals, special offers and other information from Expedia via email.</p>
+
+        <p class="ptag">By creating an account, I agree to the Expedia<a href="#">Terms and Conditions, Privacy Statement </a> and <a href="#">Expedia Rewards Terms and Conditions.</a></p>
+
+       <button id="submit" type="submit">Continue</button>
+
+   </form>
+
+   <div id="bottom">
+      
+       <h4 id="already">Already have an account ?<a href="/signin.html"> Sign in </a></h4>
+         
+         
+   </div>
+</body>
+</html>
+<script src="/signup.js"></script>
