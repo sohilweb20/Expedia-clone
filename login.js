@@ -5,24 +5,24 @@
  document.getElementById("signin").addEventListener("click",login);
 
 
- function login(){
+ function login(event){
     event.preventDefault();
+       let obj={
+         email:document.getElementById("email").value,
+        password:document.getElementById("password").value
+       }
+       console.log(obj)
 
-    let email=document.getElementById("email").value
-    let password=document.getElementById("password").value
+ 
+     data.forEach(function(elem){
+        if(elem.email==obj.email && elem.password==obj.password){
+          localStorage.setItem("logindata",JSON.stringify(elem))
+          alert("Login successfully")
+          window.location.href="navbar.html"
+        }
+    })
 
 
-    let flag=false;
-   for(let i=0;i<data.length;i++){
-    let char=data[i]
-    if(char.email==email && char.password==password){
-        flag=true;
-    }
-   }
-   if(flag==true){
-   window.location.href="navbar.html"
-   }else{
-    alert("Enter correct details")
-   }
+   
 
  }

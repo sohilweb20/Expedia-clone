@@ -213,7 +213,13 @@
 </body>
 </html>
 <script>
+let navbar=document.getElementById("sign");
 
-
+ 
+let data=JSON.parse(localStorage.getItem("logindata")) 
+console.log(data)
+if(data != null){
+    navbar.innerText=data.name
+}
     
 </script>
