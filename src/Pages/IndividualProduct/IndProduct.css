@@ -1,0 +1,199 @@
+#ProductParent {
+	background-color: #f4f2f2;
+}
+
+#ProductParent > div {
+	background-color: white;
+}
+
+#indProductImg {
+	width: 79.5%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3px;
+}
+
+#indProductImg img {
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+.childhotelImg {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 3px 3px;
+}
+
+.childhotelImg img {
+	width: 90%;
+	margin-top: -1px;
+}
+
+.productTabs:hover {
+	cursor: pointer;
+	border-bottom: 2px solid #6b646b;
+}
+
+#HotelDetails {
+	display: grid;
+	width: 80%;
+	margin: auto;
+	padding: 30px;
+	grid-template-columns: 65% 35%;
+}
+
+#VipCard {
+	display: grid;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#HotelParent {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	background-color: #f4f2f2;
+}
+#HotelCard > div {
+	padding: 10px;
+}
+
+#HotelCard {
+	border: 1px solid #bcbbbc;
+	border-radius: 3px;
+}
+
+#HotelCard img {
+	width: 100%;
+	border-radius: 3px 3px 0px 0px;
+	margin-top: -0.5px;
+	aspect-ratio: 16/8;
+}
+
+input[type="date"] {
+	align-items: flex-end;
+}
+
+#hotelCardFilter > input[type="date"]:first-child:before {
+	content: attr(placeholder) !important;
+	color: rgb(0, 145, 22);
+	display: flex;
+	align-self: flex-start;
+	margin-left: 15%;
+	margin-right: -76px;
+	font-size: 12px;
+} 
+
+#hotelCardFilter > input[type="date"]:nth-child(2):before {
+	content: attr(placeholder) !important;
+	color: rgb(229, 3, 3);
+	display: flex;
+	align-self: flex-start;
+	margin-left: 9%;
+	margin-right: -85px;
+	font-size: 12px;
+}
+
+input[type="date"]:focus:before,
+input[type="date"]:valid:before {
+	content: "";
+}
+
+#hotelCardFilter {
+	display: flex;
+	gap: 16px;
+}
+
+#popover {
+	margin-left: -27%;
+	width: 310px;
+}
+
+#Tabs>div:first-child{
+	display: grid;
+	width: 53%;
+	grid-template-columns: repeat(6,1fr);
+}
+
+
+
+
+
+@media all and (min-width: 80px) and (max-width: 720px) {
+	#HotelDetails {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#VipCard {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#VipCard > div:nth-child(3) {
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+
+	#VipCard > div:nth-child(2) {
+		margin-top: 30px;
+	}
+
+	#hotelCardFilter {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#Tabs > div:first-child {
+		display: grid;
+		visibility: hidden;
+		grid-template-columns: repeat(1,1fr);
+		height: 0px;
+	}
+
+	#indProductImg {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#HotelParent {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+
+	#popover{
+		margin-left: 0%;
+		height: 50px;
+		margin-top: -21%;
+	}
+
+}
+
+
+@media all and (min-width:720px) and (max-width:850px){
+	#HotelDetails {
+		grid-template-columns: 58% 42%;
+	}
+
+	#HotelParent {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#Tabs>div:first-child>button:last-child{
+		visibility: hidden;
+	}
+
+	#popover{
+		margin-left: -28.5%;
+	}
+}
+
+@media all and (min-width:850px) and (max-width:1000px){
+	#HotelParent {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#popover{
+		margin-left: -30%;
+	}
+}

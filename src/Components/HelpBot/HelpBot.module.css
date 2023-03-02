@@ -1,0 +1,21 @@
+.help_div {
+  color: teal;
+  margin-left: 8px;
+}
+.wid_style {
+  width: 100%;
+}
+.chat_style {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+.mar_style {
+  margin-top: 110px;
+}
+.p_option_style {
+  font-size: 13px;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(1, 127, 143);
+}

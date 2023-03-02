@@ -1,0 +1,56 @@
+#Navbar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 70px;
+    background-color: #012f64;
+    justify-content: space-around;
+}
+
+#Navbar>div{
+    display: flex;
+    align-items: center;
+}
+
+#Navbar>div:first-child{
+    padding-left: 140px;
+}
+
+
+#Navbar>div>div:hover{
+    cursor: pointer;
+}
+
+#Navbar h4{
+    font-weight: 600;
+    color: white;
+    padding: 0px 20px;
+}
+
+
+#SiteLogo{
+    height: 100%;
+    width:160px
+}
+
+@media all and (min-width:0px) and (max-width:800px){
+    #Navbar{
+        grid-template-columns: repeat(1,0.5fr);
+    }
+    #Navbar>div:first-child{
+        height: 0px;
+        margin-top: -20px;
+        visibility: hidden;
+    }
+    #Navbar>div:last-child{
+        margin-top: -32px;
+    }
+    #Navbar>div:last-child>div:first-child{
+        width: 0px;
+        visibility: hidden;
+    }
+
+    #Navbar>div:last-child>div:nth-child(2){
+        margin-left: 10px;
+    }
+
+}

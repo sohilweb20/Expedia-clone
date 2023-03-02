@@ -1,0 +1,36 @@
+/* .checkin{
+    content:"{Check in }";
+
+} */
+
+input[type="date"]{
+	align-items:flex-end;
+}
+
+
+
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: rgb(82, 81, 81);
+	display: flex;
+	align-self: flex-start;
+	margin-left: 30%;
+	margin-right: -76px;
+	font-size: 12px;
+  }
+
+ /* input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: rgb(229, 3, 3);
+	display: flex;
+	align-self: flex-start;
+	margin-left: 9%;
+	margin-right: -85px;
+	font-size: 12px;
+  } */
+
+
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }

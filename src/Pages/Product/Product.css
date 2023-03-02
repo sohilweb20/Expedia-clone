@@ -1,0 +1,32 @@
+.cardstotal{
+     width: 650px;
+     border: 1px solid gray;
+    display: flex;
+     height: 250px;
+   
+    
+
+
+}
+.side{
+     margin-left: 60%;
+   
+     background-color: rgb(44, 181, 44);
+     
+     width: 90px;
+     height: 30px;
+
+      border-radius: 7%;
+}
+.btn{
+  color: white;
+}
+.sortstyle{
+      margin-left: 80%;
+}
+.map{
+     width: 200px;
+}
+.filter{
+     
+}
